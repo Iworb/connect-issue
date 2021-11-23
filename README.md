@@ -2,29 +2,30 @@
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/connect-issue.svg)](https://www.npmjs.com/package/connect-issue) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+## Steps to reproduce
 
-## Install
-
-```bash
-npm install --save connect-issue
+1. Install all packages
+```shell
+npm i
+```
+or
+```shell
+yarn
 ```
 
-## Usage
-
-```tsx
-import React, { Component } from 'react'
-
-import MyComponent from 'connect-issue'
-import 'connect-issue/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+2. Run build script
+```shell
+npm run build
+```
+or
+```shell
+yarn build
 ```
 
-## License
+This error happened:
+```text
+Error: 'isValidElementType' is not exported by node_modules\react-redux\node_modules\react-is\index.js, imported by node_modules\react-redux\es\components\connectAdvanced.js
 
-MIT © [Iworb](https://github.com/Iworb)
+at ...\connect-issue\node_modules\react-redux\es\components\connectAdvanced.js:7:9
+
+```
